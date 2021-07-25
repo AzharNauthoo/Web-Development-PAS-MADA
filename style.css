@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+} 
+
+body {
+    max-height: 10000px;
+}
+
+.show {
+    display: flex;
+}
+
+
+/*----------------Header----------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    z-index: 10000 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky  {
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);   
+}
+
+header .main-title {
+    color: white;
+    text-align: center;
+}
+header.sticky .main-title {
+    color: black;
+}
+header .main-title h2 {
+    font-size: 3rem;
+}
+header .main-title h2 span {
+    color: black;
+}
+
+header .main-title h6 {
+    font-size: 1.1em;
+    color: white;
+}
+header.sticky .main-title h6{
+    color: black;
+}
+
+header .headers {
+    position: relative;
+    display: flex;
+    
+}
+
+header .headers li {
+    list-style: none;
+    margin-left: 30px;
+    
+}
+header .headers li a {
+  text-decoration: none;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 450;
+    transition:ease-in-out 0.1s;
+}
+header .headers li a:hover {
+    background: rgb(7, 52, 66);
+    color: white;
+    
+    border-radius: 5px;
+}
+
+header.sticky .headers li a {
+    color: black;
+}
+header.sticky .headers li a:hover {
+    color: white;
+}
+
+header i {
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    left: 95%;
+}
+header.sticky i {
+    color: black;
+}
+
+
+
+/*---------x-------Header-------x---*/
+
+
+/*----------------Main Page----------*/
+
+.main {
+    background-image: url('../assets/background1.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content .contents {
+    text-align: center;
+    color: white;
+}
+.content .contents h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.content .contents p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.content .contents .btn {
+    color: white;
+    border: none;
+    background: darkcyan;
+    padding: 0.6rem 0.5rem;
+    transition: ease-in-out 0.5s;
+    border-radius: 100px;
+}
+.content .contents .btn:hover {
+    letter-spacing: 5px;
+}
+
+.about-us {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 4rem 2rem;
+    flex-wrap: wrap;
+    height: 50%;
+    
+}
+
+.abt-us {
+    width: 40%;
+}
+.about-us img {
+    margin-left: 3rem;
+    transition: ease-in-out 1s;
+    
+}
+
+.about-us img:hover {
+    transform:scale(1.2);
+}
+
+.why-us {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.2em;
+    
+}
+
+.why-us .images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.why-us .images img {
+     width: 300px;
+     height: 300px;
+    padding:0.5rem;
+}
+
+.why-us .images .imagess {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities .our-activities {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.activities .act-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin:0 5rem;
+    grid-gap: 30px;
+    grid-auto-flow: column;
+    
+}
+.activities .act-images .grid-activities {
+    width:250px;
+    height: 200px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    transition: 0.5s;
+}
+.activities .act-images .grid-activities:hover {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+.activities .act-images .a{
+  background-image: url('../assets/grid1.jpg');
+   background-size: cover;
+}
+.activities .act-images .b{
+    background-image: url('../assets/grid2.jpg');
+     background-size: cover;
+  }
+  .activities .act-images .c{
+    background-image: url('../assets/grid3.jpg');
+     background-size: cover;
+  }
+  .activities .act-images .d{
+    background-image: url('../assets/grid4.jpg');
+     background-size: cover;
+  }
+  .activities .act-images .e{
+    background-image: url('../assets/grid5.jpg');
+     background-size: cover;
+  }
+  .activities .act-images .f{
+    background-image: url('../assets/grid6.jpg');
+     background-size: cover;
+  }
+  .activities .act-images .g{
+    background-image: url('../assets/grid7.jpg');
+     background-size: cover;
+  }
+  .activities .act-images .h{
+    background-image: url('../assets/grid8.jpg');
+     background-size: cover;
+  }
+
+  .map {
+      width:100%;
+      background-color: black;
+  }
+
+  .map .location {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .map .location .address {
+      color: white;
+      padding-top: 3rem;
+  }
+  .map .location iframe {
+      padding: 3rem 2rem;
+  }
+
+  .reviews {
+      background-image: url('../assets/reviewbackground.jpg');
+      background-size: cover;
+      height:100vh;
+      
+  }
+  .reviews h2 {
+      color: white;
+      text-align: center;
+      padding-top: 80px;;
+  }
+
+.reviews .review{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reviews .review .person-a,.reviews .review .person-b,.reviews .review .person-c {
+    margin:60px;
+    padding:15px;
+    background: white;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    width:40vh;
+}
+
+.reviews .review .person-a img,.reviews .review .person-b img,.reviews .review .person-c img {
+    width:150px;
+    height: 150px;
+}
+.contact { 
+    background-image:url('../assets/lastbackground.png');
+     background-size: cover; 
+    height: 80vh;
+}
+.contact .title-white {
+    text-align: center;
+}
+.contact .title-white p span {
+    font-size: 2.0em;
+    color: red;
+    font-weight: bolder;
+}
+.contact-form {
+    padding: 30px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+    max-width: 500px;
+    margin-top: 50px;
+    margin:auto;
+    text-align: center;
+}
+
+.contact-form h3 {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.contact-form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color:#111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+/*------x----------Main Page------x----*/
+
+/*-----------------Footer--------------*/
+footer {
+    background :whitesmoke;
+    
+}
+.find-us {
+    text-align: center;
+}
+
+.find-us i {
+    cursor: pointer;
+    font-size: 1.5em;
+    padding:1rem 0;
+    margin: 0 0.5rem;
+}
+.find-us i:hover{
+    color: blueviolet;
+}
+.find-us h5 {
+    margin:2rem;
+}
+
+.find-us h6 {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.find-us h6 span {
+    font-size: 1.2em;
+    color:rgb(44, 51, 65)
+}
+
+
+
+
+
+
+
+
+
+/*-----------------Footer--------------*/
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 920px) {
+    header {
+        flex-direction: column;
+        background:white;
+        transition:1s;
+    }
+
+    header .main-title, header .main-title h6, header .headers li a, header i{
+        color: black;
+    }
+   
+    header .headers {
+        flex-direction: column;
+        padding-top: 5px;
+        display: none;
+        
+    }
+    header i {
+        top: 9%;
+    }
+
+    header .tits {
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .about-us img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .activities .act-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+}
+}
+
+  @media only screen and (max-width: 960px) {
+    .activities .act-images { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    } 
+}
+
+@media only screen and (max-width: 660px) {
+    .activities .act-images { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(8, 1fr); 
+    } 
+}
+
+@media only screen and (max-width: 1040px) {
+    .reviews .review .person-c {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .reviews .review .person-b {
+        display: none;
+    }
+}
+
+
+
