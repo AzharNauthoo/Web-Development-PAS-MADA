@@ -1,0 +1,83 @@
+body {
+    background-image: url(img/MkLdje.jpg);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head{
+    text-align: center;
+    color: white;
+    font-size: 25;
+}
+
+.head span {
+    font-weight: bolder;
+    font-size: 30;
+    text-decoration: underline;
+    
+}
+
+.mid {
+    width:100%;
+    height: 70%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+    
+}
+
+.right-mid {
+    text-align: center;
+    color: magenta;
+}
+
+.left-mid {
+    text-align: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 20px;
+    border-radius: 15px;
+    
+
+}
+
+.left-mid input {
+    margin: 10px 10px;
+    width: 90%;
+    height: 10%;
+    background: rgb(204, 86, 92);
+    border-radius:5px;
+    border-style: none;
+}
+.left-mid input:focus::placeholder {
+    color: transparent;
+}
+.left-mid input::placeholder {
+    color: white;
+    transition: color 0.3s ease;
+    margin: 115px;
+}
+
+.left-mid button {
+    margin-top: 10px;
+    width: 50%;
+    color: white;
+    background: rgb(95, 185, 95);
+    height: 15%;
+    border-style: none;
+    font-size:larger;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.left-mid button:hover {
+    background: transparent;
+    color: black;
+    border-style: black;
+}
+
+p {
+    color: white;
+    text-align: center;
+}

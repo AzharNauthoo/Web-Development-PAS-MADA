@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-image: url(img/MkLdje.jpg);
+    background-size: cover;
+    /* height:100%; */
+}
+/* .head {
+    background-image: url(img/MkLdje.jpg);
+    background-size: cover;
+    height:100%;
+} */
+
+
+header {
+    text-align: center;
+    font-size: 22;
+    color: white;
+}
+
+.youtube {
+    text-align: center;
+    
+}
+
+.booking {
+    border: none;
+    width: 45%;
+    height:10%;
+    margin-top: 10px;
+    width: 50%;
+    color: white;
+    background: rgb(40, 189, 40);
+    border-style: none;
+    font-size:larger;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+/* .want {
+    background-color: greenyellow;
+} */
+.templates {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.templates .images {
+    width: 18%;
+}
+
+.want-titles {
+    text-align: center;
+    font-size: 22;
+    color:white;
+    
+}
+
+a {
+    text-align: center;
+}
+
+.benefits {
+    text-align: center;
+    background: rgba(237, 240, 248, 0.918);
+    margin-top: 25px;
+    border-radius: 90px;
+    padding:0.6rem 2rem;
+}
+
+.button-middle {
+    text-align: center;
+}
+
+.urgent-titles {
+    text-align: center;
+    color: white;
+    font-size: 40;
+}
+
+.urgent-description {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.writing {
+    color: white;
+    font-size:20;
+}
+
+#footer {
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(32, 214, 32);
+    color: black;
+    transition: .5s ease-in-out;
+}
