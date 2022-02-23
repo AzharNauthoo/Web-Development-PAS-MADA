@@ -1,0 +1,558 @@
+html,* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0%;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth; 
+    
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+/*-------Global classes -------*/
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#pre-loader {
+    background: #fcd165 url(preloader.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 99.999%;
+    position: fixed;
+    z-index:100;
+}
+
+
+/*----x---Global classes ----x---*/
+
+
+/*-------------------------------------------Header -------------------------------------*/
+
+#promotext {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left:5.1em;
+    background-color: #fcd165;
+    overflow: hidden;
+    
+}
+
+#promoinfo {
+    padding-right: 6em;
+}
+#promoinfo strong {
+    padding-right: 1.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    padding:0 2rem;
+    height: 0rem;
+    min-height:10vh; 
+    overflow: hidden;  
+    background-color: #fcd165;
+
+}
+
+.nav-links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+ 
+.nav-links a{
+    text-decoration:none;
+    color:darkslategray;
+    font-weight: 500;
+}
+
+
+.nav-links li{
+    list-style: none;
+}
+.burger {
+    display: none;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color: gray;
+    margin:5px;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+   color:gray;
+}
+
+
+
+/*--------x----------------------------Header --------x--------------------------------*/
+
+/*------------------------------------Main ------------------------------*/
+
+/*------------------------------------main section ------------------------------*/
+
+
+main {
+    
+    /* background-color: #fcd165; */
+    background-color: white;
+    
+}
+#main-container{
+    padding-top: 10px;
+}
+.main-title{
+    color: #fcd165;
+
+}
+#main-container .slogan {
+    color: #b70000;
+}
+
+.fa-circle-check {
+    font-weight: bolder;
+    font-size: 25px;
+    color: green;
+    
+}
+#sectionBest {
+    padding-top: 25px;
+}
+
+
+
+#main-container li {
+    list-style:none;
+    margin:8px 0;
+    font-size: large;
+    
+} 
+#sectionBest h1, b{
+    padding-left: 5%;
+}
+
+
+
+
+#sectionForms {
+    background-color: #fff;
+    border:goldenrod solid 2px; 
+    border-radius: 5px;
+    height: fit-content;
+    margin-top: 25px;
+
+    
+}
+#sectionForms h2 {
+    font-size: 27px;
+    padding-top:10px;
+}
+
+#sectionForms i {
+   font-size: 14px;
+}
+
+
+
+#transferData {
+    margin:1em .5em;
+}
+
+.btn {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 5px;
+}
+
+#sectionForms span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    margin: 0 25%;
+    text-align: center;
+}
+
+#sectionForms i {
+    font-size: smaller;
+}
+#sectionForms .labels {
+    font-size: 14px;
+    font-weight: bold;
+    color:#3b3939;
+}
+#sectionForms form {
+    padding: 10px;
+}
+
+
+
+#sectionForms .inputs, #sectionForms select {
+
+    border: 0.1px solid grey;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+    
+}
+
+#sectionForms .inputs:focus, #sectionForms select:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px dodgerblue;
+    
+}
+
+.container {
+    margin:19px 0;
+}
+
+
+/*----------------------xxxxx--------------main section ------------------xxxx------------*/
+
+/*------------------------------------review section ------------------------------*/
+
+
+.trusted {
+    text-align: center;
+    color: #686262;
+    padding:15px 0;
+
+}
+.review-pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    padding:10px;
+    
+}
+
+.review-pics img{ width: 100%};
+
+
+.review-pics .imagez {
+    padding-top: 1000px;
+    padding-right: 10px;
+}
+
+.trusted .tirer{
+    width:30%;
+    height:2px;
+    background-color: gray;
+    margin:15px;
+}
+
+.tirer-cont{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    
+
+}
+
+/*--------------------xxx----------------review section ---------------xxx---------------*/
+
+/*------------------------------------contact section ------------------------------*/
+.contact-us{
+    background-color: #fcd165;
+
+}
+
+
+.wsap {
+    text-align: center;
+}
+
+
+.contact-us img{
+    max-width:200;
+    transition:0.2s ease-in-out;
+}
+
+.contact-us img:hover {
+    transform:scale(0.9);
+}
+
+.contactus {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left:20px;
+}
+
+
+/*-----------------------xxx-------------contact section ----------------xxx--------------*/
+
+/*------------------------------------about us section ------------------------------*/
+.aboutus{
+    background-color: #fcd165;
+
+
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+.about-us {
+     
+    margin:auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.about-us blockquote {
+    font-size: larger;
+    text-align: left;
+}
+.about-us blockquote span{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b70000;
+
+     
+}
+.about-us p,.about-us h2{
+    text-align: left;
+
+}
+.about-us p{
+    line-height:30px;
+
+}
+.about-us p span{
+    color: #b70000;
+
+    font-weight: bold;
+
+}
+
+
+
+
+/*-----------------------xxx-------------about us section ----------------xxx--------------*/
+/*------------------------------------vehicles section ------------------------------*/
+.vehicles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto 10px;
+    
+
+}
+.vehicle h3 {
+    font-size: 20px;
+    color: #b70000;
+    text-align: center;
+}
+#choose-us{
+    padding:30px 0;
+}
+
+#choose-us span {
+    color: #fcd165;
+}
+
+.vehicle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+} 
+
+.vehicle strong{
+    font-size: 30px;
+}
+
+
+
+/*-----------------------xxx-------------vehicles section ----------------xxx--------------*/
+/*------------------------------------review section ------------------------------*/
+
+
+
+
+/*---------------xxxx---------------------review section -----------xxx-------------------*/
+
+/*------------------------------------faq section ------------------------------*/
+.faq h2{
+    text-align: center;
+}
+.faq {
+    padding-top: 25px;
+    
+
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+}
+
+/*-----------------------xxx-------------faq section ----------------xxx--------------*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #2e2c26;
+    align-content: center;
+    height:10vh;
+    align-items:center;
+    padding:0 15px;
+    margin: 0px;
+}
+
+.footer p {
+    padding-top:20px ;
+    color:#ffff;
+    font-size:15px;
+}
+
+.footer a{
+    color:#fff;
+    font-size:15px;
+}
+
+.footer i {
+    color:#fff;
+    margin:0px 10px;
+}
+.footer i:hover { color:dodgerblue;}
+
+ .pads {
+    padding: 0px 8px;
+} 
+
+
+
+
+/*-------------Main -----------*/
+/*-------------Thank you-----------*/
+/*-------------Header -----------*/
+.paddingz {
+    height:25px;
+}
+.thanks {
+    font-size: larger;
+    text-align: center;
+}
+.thank-you {
+    text-align: center;
+
+}
+
+
+
+/*------xxx-------Header -------xxx----*/
+
+
+/*------xxx-------Tahnk you --------xxx---*/
+
+ 
+
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        
+        
+    }
+
+    .nav-links {
+        position:absolute;
+        right: 0px;
+        height: 80vh;
+        top:19vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        transform:translateX(-100%);
+        transition:.5s ease-in-out;
+        
+        
+    }
+
+
+    .burger {
+        display: block;
+    }
+    #main-container h1 {
+        text-align: center;
+    }
+
+#sectionForms {
+    width:90%;
+    margin:0 auto;
+}
+
+.footer {
+    height: 28vh;
+}
+.footer a { 
+    font-size:large;
+    margin:5px
+}
+.footer a i {
+    font-size: 18px;
+}
+.aboutus{
+   
+    padding:0px 20px;
+
+}
+.about-us h2{
+    text-align: center;
+}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #promoinfo {
+        display: none;
+        
+    }
+    #promotext {
+        text-align: center;
+        margin:0;
+        padding:0;
+    }
+}
+
+
+.nav-active {
+    transform:translateX(0%);
+}
+
+
